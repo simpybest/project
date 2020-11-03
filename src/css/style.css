@@ -81,6 +81,9 @@
   font-size: 22px;
   max-width: 504px; }
 
+.hero__button {
+  margin-right: 20px; }
+
 .hero__instagram {
   max-width: 80px;
   height: 100%;
