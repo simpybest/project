@@ -17,13 +17,14 @@ function bs() {
         }
     });
     watch("src/*.html").on('change', browserSync.reload);
-    watch("src/sass/*.sass", serveSass);
+    watch("src/sass/**/*.sass", serveSass)
+    watch("src/sass/**/*.scss", serveSass);
     watch("src/css/*.css", serveMinCss);
 };
 
 // sass
 function serveSass () {
-    return src('src/sass/*.sass')
+    return src('src/sass/**/*.sass', "./sass/**/*.scss")
         .pipe(sass())
         .pipe(autoprefixer({
             cascade: false
