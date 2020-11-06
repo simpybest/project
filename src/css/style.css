@@ -54,15 +54,16 @@
   justify-content: space-between;
   align-items: center; }
 
-.logo {
-  color: #E3B873;
-  text-transform: uppercase; }
-
 .nav__item {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Furura Book';
   transition: 0.3s; }
   .nav__item:hover {
     color: #E3B873; }
@@ -76,7 +77,11 @@
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #E3B873; }
+  color: #E3B873;
+  font-family: 'Futura Demi';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px; }
 
 .hero {
   background: #131313 url("../img/herobg.jpg") no-repeat center/cover;
