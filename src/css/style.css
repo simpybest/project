@@ -73,6 +73,11 @@
 .contacts__phone {
   margin-right: 45px; }
 
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #E3B873; }
+
 .hero {
   background: #131313 url("../img/herobg.jpg") no-repeat center/cover;
   height: 100vh;
