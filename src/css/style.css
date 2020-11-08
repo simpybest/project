@@ -22,7 +22,7 @@
   animation: show 2s ease 2s infinite; }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 24px;
   border: none;
   border-radius: 2px;
   text-decoration: none;
@@ -60,7 +60,7 @@
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 2.85rem;
+  margin-right: 2.5rem;
   font-style: normal;
   font-weight: normal;
   font-size: 0.94rem;
@@ -82,7 +82,7 @@
   color: #E3B873;
   font-family: 'Futura Demi';
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.075rem;
   line-height: 16px; }
 
 .hero {
@@ -109,11 +109,18 @@
   position: relative; }
 
 .hero__text {
-  font-size: 1.57rem;
-  max-width: 504px; }
+  font-size: 1.3rem;
+  max-width: 504px;
+  line-height: 131%;
+  margin: 0;
+  margin-bottom: 3rem; }
 
 .hero__button {
-  margin-right: 20px; }
+  margin-right: 20px;
+  padding: 20px 35px; }
+
+.hero__title {
+  margin-bottom: 1rem; }
 
 .hero__instagram {
   max-width: 80px;
@@ -157,6 +164,7 @@
   align-items: center;
   display: flex;
   transform: rotate(90deg);
+  font-size: 1.1rem;
   line-height: 0.8; }
   .instagram__link::after {
     content: '';
@@ -169,7 +177,8 @@
   margin: 0;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
-  font-size: 2.857rem; }
+  font-size: 2.857rem;
+  line-height: 1.4; }
 
 .title--primary {
   color: #E3B873; }
