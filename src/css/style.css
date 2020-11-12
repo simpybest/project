@@ -362,6 +362,8 @@ img {
   justify-content: space-between; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -373,6 +375,9 @@ img {
   align-items: center;
   justify-content: center;
   display: flex; }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
 
 .modal__dialog {
   position: relative;

@@ -1,4 +1,6 @@
 .modal
+    opacity: 0
+    visibility: hidden
     position: fixed
     left: 0
     top: 
@@ -11,6 +13,9 @@
     align-items: center
     justify-content: center
     display: flex
+    &--visible
+        opacity: 1
+        visibility: visible
 .modal__dialog
     position: relative
     background: #131313
