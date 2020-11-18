@@ -78,7 +78,7 @@ img {
     .section-title__image {
       display: flex;
       justify-content: center;
-      align-items: center dire; }
+      align-items: center; }
       .section-title__image::before, .section-title__image::after {
         content: '';
         width: 32px;
