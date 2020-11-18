@@ -2,51 +2,63 @@
     padding: 11px 24px
     border: none
     border-radius: 2px
-    text-decoration: none
     text-transform: uppercase
-    font-size: 0.95rem
+    font-size: 0.93rem
     &:hover
         cursor: pointer
-
     &--primary
-        box-shadow: 0px 5px 15px 0px rgba($primary, 0.2)
         background-color: $primary
         color: $white
-        transition: 0.7s
-        &:hover
-            box-shadow: none
+        box-shadow: none
+        transition: box-shadow .1s
+        &:hover 
+            box-shadow: 0px 5px 15px rgba($primary, 0.2)
     &--outline
-        border: 1px solid white
+        border: 1px solid $white
         background-color: transparent
-        color: white
+        color: $white
 .label
     font-size: 1.07rem
-    font-family: 'FuturaBookC'
-    &--light
-        color: rgba(255, 255, 255, 0.5)
+    &--white
+        color: rgba($white, 0.5)
 .input
     background-color: transparent
-    color: #fff
     border: none
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3)
     font-size: 1.285rem
-    padding: 0.5rem
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15)
-    &::placeholder
-        color: #fff
-.policy__checkbox
-    opacity: 0
-    visibility: hidden
-    &:checked +
-        .policy__label
-            &::before
-                background: $primary url('../img/click.svg') no-repeat center / 0.8rem
-.policy__label
-    display: flex
-    align-items: center
-    &::before
-     content: ''
-     width: 18px
-     height: 18px
-     border: 1px solid $primary
-     cursor: pointer
-     margin-right: 0.64rem
+    padding: 0.5rem 0
+    margin-bottom: 1rem
+    &--white
+        color: $white
+        &::placeholder
+            color: $white
+.policy
+    &__checkbox
+        opacity: 0
+        visibility: hidden
+        &:checked + 
+           .policy__label
+               &::before
+                   background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+    &__label
+        display: flex
+        align-items: center
+        font-size: 1.142rem
+        &::before
+            content: ""
+            width: 18px
+            height: 18px
+            border: 1px solid $primary
+            border-radius: 1px
+            cursor: pointer
+            margin-right: 0.64rem
+        &--center
+            justify-content: center
+label
+    &.invalid
+        color: tomato
+input
+    &.invalid
+        border-bottom: 1px solid tomato
+
+
