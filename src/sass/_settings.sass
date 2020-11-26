@@ -18,7 +18,6 @@ img
         color: $white
     &-title
         text-align: center
-        margin-bottom: 1.5rem
         &--left
             text-align: left
         &--white
@@ -43,7 +42,8 @@ img
         &__image
             display: flex
             justify-content: center
-            align-items: center
+            align-items: center 
+            margin-bottom: 35px
             &::before, &::after
                 content: ''
                 width: 32px
@@ -56,8 +56,26 @@ img
             line-height: 2.07rem
             max-width: 31.57rem
             &--center
-                max-width: 100%
-                padding: 0 200px
+                max-width: 35.714rem
+                margin: auto
+                font-size: 1.428rem
+                text-align: center
+                margin-bottom: 75px
+            &--bottom
+                max-width: 40.571rem
+                margin: auto
+                margin-top: 80px
+                text-align: center
+                font-size: 1.428rem
+                &::before
+                    content: ""
+                    display: block
+                    margin: auto
+                    margin-bottom: 1.5rem
+                    width: 55px
+                    height: 2px
+                    border-radius: 30px
+                    background-color: $primary
             &--upper
                 text-transform: uppercase
 

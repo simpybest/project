@@ -1,0 +1,57 @@
+.fantasy
+    margin-top: 15rem
+    margin-bottom: 10rem
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 88vh
+    color: $white
+    background: $dark url('../img/fantasy/fantasy-bg.jpg') no-repeat center / cover
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba($dark, 0.85)
+    &__content
+        position: relative
+    &__title
+        margin-bottom: 1rem
+    &__card
+        max-width: 29.357rem
+    .card
+        &__list
+            line-height: 2.462rem
+            font-size: 1.428rem
+            padding: 0
+            list-style: none
+            margin-top: 2.857rem
+        &__item
+            display: flex
+            justify-content: flex-end
+            flex-direction: column
+            &--primary
+                color: $primary
+                text-decoration: underline
+        &__img
+             padding-bottom: 3rem
+
+    &__photos
+        position: absolute
+        top: -14rem
+        right: 0
+        width: 70%
+        height: 100%
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+        &:last-child
+            .card__img
+                padding-left: 3rem
+
+    
+
+
