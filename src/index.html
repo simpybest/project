@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -67,11 +67,11 @@
                                         <h3 class="swiper-slide__heading">Площадь:</h3>
                                         <span class="swiper-slide__value">81 м<sup>2</sup> </span>
                                     </div>
-                                    <div class="swiper-slide__text">
+                                    <div class="swiper-slide__text swiper-slide__text--bottom">
                                         <h3 class="swiper-slide__heading">Срок ремонта:</h3>
                                         <span class="swiper-slide__value">3,5 месяца</span>
                                     </div>
-                                    <div class="swiper-slide__text">
+                                    <div class="swiper-slide__text swiper-slide__text--bottom">
                                         <h3 class="swiper-slide__heading">Стоимость:</h3>
                                         <span class="swiper-slide__value">По запросу</span>
                                     </div>
@@ -123,13 +123,13 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper swiper-no-swiping">
                                 <div class="swiper-slide">
-                                    <img src="img/project.jpg" alt="">
+                                    <img src="img/projects/project.jpg" alt="Проект1">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/project.jpg" alt="">
+                                    <img src="img/projects/project.jpg" alt="Проект2">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="img/project.jpg" alt="">
+                                    <img src="img/projects/project.jpg" alt="Проект3">
                                 </div>
                             </div>
                         </div>
@@ -142,11 +142,11 @@
                 <div class="section-title control__section-title section-title--white">
                     <h2 class="section-title__heading">Онлайн контроль</h2>
                     <div class="section-title__image">
-                        <img src="img/video.svg" alt="video" class="video-img">
+                        <img src="img/control/video.svg" alt="video">
                     </div>
                 </div>
                 <div class="control__video video">
-                    <img src="img/play.svg" alt="play" class="video__play">
+                    <img src="img/control/play.svg" alt="play" class="video__play">
                 </div>
                 <p class="control__text">
                     На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы
@@ -174,7 +174,7 @@
                 <div class="section-title types__section-title">
                     <h2 class="section-title__heading">Виды ремонта</h2>
                     <div class="section-title__image">
-                        <img src="img/repair.svg" alt="repair">
+                        <img src="img/types/types.svg" alt="types-icon">
                     </div>
                 </div>
                 <div class="row">
@@ -198,7 +198,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-30-30">
+                    <div class="col-30">
                         <div class="card types__card">
                             <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__image">
                             <div class="card__text">
@@ -218,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-30-30">
+                    <div class="col-30">
                         <div class="card types__card">
                             <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__image">
                             <div class="card__text">
@@ -241,12 +241,85 @@
                 </div>
             </div>
         </section>
+        <section class="section request">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="img/request/request-bg.svg" alt="Экономия" class="card__image">
+                    </div>
+                    <div class="col">
+                        <div class="card request__card">
+                            <div class="modal__dialog">
+                                <button class="modal__close"></button>
+                                <h3 class="modal__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                                <form action="send.php" method="POST" class="form modal__form">
+                                    <div class="input-group modal__input-group">
+                                        <label for="user-name" class="label form__label label--white">Имя</label>
+                                        <input type="text" name="userName" class="input form__input modal__input input--white" id="request-user-name" placeholder="Как вас зовут:">
+                                    </div>
+                                    <div class="input-group modal__input-group">
+                                        <label for="user-phone" class="label form__label label--white">Телефон</label>
+                                        <input type="tel" name="userPhone" class="input form__input modal__input input--white" id="request-user-phone" placeholder="Ваш номер телефона:">
+                                    </div>
+                                    <div class="policy modal__policy">
+                                        <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+                                        <label class="policy__label" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
+                                    </div>
+                                    <button class="button button--primary modal__button">Вызвать замерщика</button>
+                                </form>
+                            </div>
+                            <div class="bank">
+                                <img src="img/request/request-icon.svg" alt="Копилка">
+                                <p class="card__text">Это поможет сэкономить 10 - 20% от стоимости материалов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section fantasy">
+            <div class="container">
+                <div class="row fantasy__content">
+                    <div class="col-30">
+                        <div class="fantasy__card">
+                            <h1 class="section-title__heading card__title section-title__heading--primary">Мы реализуем ваши самые смелые фантазии</span>
+                            </h1>
+                            <ul class="card__list">
+                                <li class="card__item card__item--primary">Американская классика</li>
+                                <li class="card__item">Имперский стиль</li>
+                                <li class="card__item">Классика</li>
+                                <li class="card__item">Лофт</li>
+                                <li class="card__item">Минимализм</li>
+                                <li class="card__item">Прованс</li>
+                                <li class="card__item">Романтизм</li>
+                                <li class="card__item">Скандинаский стиль</li>
+                                <li class="card__item">Средиземноморский стиль</li>
+                                <li class="card__item">Хайтек</li>
+                                <li class="card__item">Эклектизм</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-70">
+                        <div class="fantasy__photos">
+                            <div class="card__item">
+                                <img src="img/fantasy/fantasy-1.jpg" class="card__img" alt="Классика">
+                                <img src="img/fantasy/fantasy-3.jpg" class="card__img" alt="Прованс">
+                            </div>
+                            <div class="card__item">
+                                <img src="img/fantasy/fantasy-2.jpg" class="card__img" alt="Романтизм">
+                                <img src="img/fantasy/fantasy-4.jpg" class="card__img card__img--space" alt="Лофт">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section design">
             <div class="container">
                 <div class="section-title design__section-title">
                     <h2 class="section-title__heading">Дизайн проект</h2>
                     <div class="section-title__image">
-                        <img src="img/design.svg" alt="design">
+                        <img src="img/design/design.svg" alt="design-icon">
                     </div>
                     <p class="section-title__text section-title__text--center">
                         Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет материалы и сокращает время ремонтных работ
@@ -318,7 +391,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--dark steps">
+        <section class="section section--dark swiper">
             <div class="container">
                 <div class="row">
                     <div class="col-40">
@@ -339,7 +412,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-next"></div>
@@ -373,8 +445,149 @@
                                         <div class="swiper-slide__link">06</div>
                                         <span class="swiper-slide__value">Приемка-сдача работ</span>
                                     </div>
-                                    <img src="img/steps.jpg" alt="steps">
+                                    <img src="img/steps/steps.jpg" alt="steps-icon">
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section command">
+            <div class="container">
+                <div class="section-title command__section-title">
+                    <h2 class="section-title__heading section-title--white">Наша команда</h2>
+                    <div class="section-title__image">
+                        <img src="img/command/command.svg" alt="command">
+                    </div>
+                    <p class="section-title__text section-title__text--center section-title--white">
+                        Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <div class="card command__card">
+                            <img src="img/command/command-1.jpg" alt="Косметический ремонт" class="card__image">
+                            <div class="card__text">
+                                <h3 class="card__title">Алексей Колмаков</h3>
+                                <p class="section-title__text">
+                                    Проектный менеджер
+                                </p>
+                                <strong class="card__pricetag">
+                                    Опыт работы 8 лет
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="card command__card">
+                            <img src="img/command/command-2.jpg" alt="Капитальный ремонт" class="card__image">
+                            <div class="card__text">
+                                <h3 class="card__title">Алина Сухорукова</h3>
+                                <p class="section-title__text">
+                                    Дизайнер
+                                </p>
+                                <strong class="card__pricetag">
+                                    Опыт работы 6 лет
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="card command__card">
+                            <img src="img/command/command-3.jpg" alt="Дизайнерский ремонт" class="card__image">
+                            <div class="card__text">
+                                <h3 class="card__title">Давид Волынев</h3>
+                                <p class="section-title__text">
+                                    Бригадир
+                                </p>
+                                <strong class="card__pricetag">
+                                    Опыт работы 7 лет
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="section-title__text section-title__text--bottom">
+                    Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
+                </p>
+            </div>
+        </section>
+        <section class="section clients">
+            <div class="container">
+                <div class="section-title clients__section-title">
+                    <h2 class="section-title__heading section-title">Наши клиенты</h2>
+                    <div class="section-title__image">
+                        <img src="img/clients/clients.svg" alt="clients">
+                    </div>
+                    <p class="section-title__text section-title__text--center section-title">
+                        80% наших клиентов рекомендуют нас своим знакомым и друзьям
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-30">
+                        <div class="card clients__card">
+                            <div class="card__head">
+                                <img src="img/clients/client-1.png" alt="Клиент 1" class="card__image">
+                                <h3 class="card__title">Савельева Екатерина Львовна</h3>
+                            </div>
+                            <p class="section-title__text section-title__text--grey">
+                                Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось.
+                                Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.
+                            </p>
+                            <div class="card__text">
+                                <strong class="card__item">
+                                    <img src="img/clients/icon-size.svg" alt="Размер 1" class="card__image">
+                                    40 М <sup>2</sup>
+                                </strong>
+                                <strong class="card__item">
+                                    <img src="img/clients/icon-days.svg" alt="Размер 1" class="card__image">
+                                    48 дней
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="card clients__card">
+                            <div class="card__head">
+                                <img src="img/clients/client-2.png" alt="Клиент 2" class="card__image">
+                                <h3 class="card__title">Большов Михаил Анатольевич</h3>
+                            </div>
+                            <p class="section-title__text section-title__text--grey">
+                                Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось.
+                                Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.
+                            </p>
+                            <div class="card__text">
+                                <strong class="card__item">
+                                    <img src="img/clients/icon-size.svg" alt="Размер 2" class="card__image">
+                                    90 М <sup>2</sup>
+                                </strong>
+                                <strong class="card__item">
+                                    <img src="img/clients/icon-days.svg" alt="Размер 2" class="card__image">
+                                    128 дней
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-30">
+                        <div class="card clients__card">
+                            <div class="card__head">
+                                <img src="img/clients/client-3.png" alt="Клиент 3" class="card__image">
+                                <h3 class="card__title">Хасанов Даниил Муратович</h3>
+                            </div>
+                            <p class="section-title__text section-title__text--grey">
+                                Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось.
+                                Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.
+                            </p>
+                            <div class="card__text">
+                                <strong class="card__item">
+                                    <img src="img/clients/icon-size.svg" alt="Размер 3" class="card__image">
+                                    56 М <sup>2</sup>
+                                </strong>
+                                <strong class="card__item">
+                                    <img src="img/clients/icon-days.svg" alt="Размер 3" class="card__image">
+                                    86 дней
+                                </strong>
                             </div>
                         </div>
                     </div>
@@ -383,28 +596,35 @@
         </section>
     </main>
     <footer class="footer section--dark">
-        <div class="container">
+        <div class="container top-container">
             <div class="footer-wrap">
                 <h3 class="footer__title">Остались вопросы?</h3>
                 <form action="" class="form footer__form">
                     <div class="input-group footer__input-group">
                         <label for="user-name" class="label form__label label--white">Имя</label>
-                        <input type="text" name="userName" class="input form__input footer__input input--white" id="user-name" placeholder="Как вас зовут:">
+                        <input type="text" name="userName" class="input form__input footer__input input--white" id="footer-user-name" placeholder="Как вас зовут:">
                     </div>
                     <div class="input-group footer__input-group">
                         <label for="user-phone" class="label form__label label--white">Телефон</label>
-                        <input type="tel" name="userPhone" class="input form__input footer__input input--white" id="user-phone" placeholder="Ваш номер телефона:">
+                        <input type="tel" name="userPhone" class="input form__input footer__input input--white" id="footer-user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     <div class="input-group footer__input-group footer__input-group--full-width">
                         <label for="user-question" class="label form__label label--white">Вопрос</label>
-                        <input type="text" name="userQuestion" class="input form__input footer__input input--white" id="user-question" placeholder="Я хочу спросить:">
+                        <input type="text" name="userQuestion" class="input form__input footer__input input--white" id="footer-user-question" placeholder="Я хочу спросить:">
                     </div>
                     <div class="policy footer__policy">
-                        <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
+                        <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="footer-policy-checkbox" checked>
                         <label class="policy__label policy__label--center" for="policy-checkbox">Я соглашаюсь с обработкой данных</label>
                     </div>
                     <button class="button button--primary footer__button">Отправить</button>
                 </form>
+            </div>
+            <div class="footer__address">
+                Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99
+                <div class="footer__icons">
+                    <img src="img/footer/footer-icon-message.svg" alt="Сообщение" class="icon">
+                    <img src="img/footer/footer-icon-inst.svg" alt="Instagram" class="icon">
+                </div>
             </div>
             <div class="map footer__map">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af8ef925c71e229efdf73fecf0ffcd08fb24fb2ea9d290562d86a103b4adb3663&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>
@@ -415,7 +635,7 @@
                 <div class="menu">
                     <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
                     <nav class="nav menu__nav">
-                        <a href="index.html" class="nav__item">Главная</a>
+                        <a href="#" class="nav__item">Главная</a>
                         <a href="#" class="nav__item">Проекты</a>
                         <a href="#" class="nav__item">Замер</a>
                         <a href="#" class="nav__item">Команда</a>
@@ -437,15 +657,15 @@
             <form action="send.php" method="POST" class="form modal__form">
                 <div class="input-group modal__input-group">
                     <label for="user-name" class="label form__label label--white">Имя</label>
-                    <input type="text" name="userName" class="input form__input modal__input input--white" id="user-name" placeholder="Как вас зовут:">
+                    <input type="text" name="userName" class="input form__input modal__input input--white" id="modal-user-name" placeholder="Как вас зовут:">
                 </div>
                 <div class="input-group modal__input-group">
                     <label for="user-phone" class="label form__label label--white">Телефон</label>
-                    <input type="tel" name="userPhone" class="input form__input modal__input input--white" id="user-phone" placeholder="Ваш номер телефона:">
+                    <input type="tel" name="userPhone" class="input form__input modal__input input--white" id="modal-user-phone" placeholder="Ваш номер телефона:">
                 </div>
                 <div class="input-group modal__input-group">
                     <label for="user-email" class="label form__label label--white">E-mail</label>
-                    <input type="email" name="userEmail" class="input form__input modal__input input--white" id="user-email" placeholder="Ваш e-mail:">
+                    <input type="email" name="userEmail" class="input form__input modal__input input--white" id="modal-user-email" placeholder="Ваш e-mail:">
                 </div>
                 <div class="policy modal__policy">
                     <input class="policy__checkbox" type="checkbox" name="policy-checkbox" id="policy-checkbox" checked>
