@@ -54,22 +54,7 @@ $(document).ready(function() {
                 required: "Обязательно укажите e-mail",
                 email: "Введите в формате: name@domain.com"
             }
-        },
-        submitHandler: function(form) {
-            $.ajax({
-                type: "POST",
-                url: "send.php",
-                data: $(form).serialize(),
-                success: function(response) {
-                    alert('Форма оправлена, за вами уже выехали.');
-                    $(form)[0].reset();
-                    modal.removeClass('modal--visible');
-                },
-                error: function(response) {
-                    console.error('Ошибка запроса ' + response);
-                }
-            });
-        }
+        },  
     });
     $('.footer__form').validate({
         errorClass: "invalid",
