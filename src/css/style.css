@@ -40,6 +40,9 @@
 *, *:before, *:after {
   box-sizing: border-box; }
 
+button, input {
+  outline: none; }
+
 html {
   font-size: 14px; }
 
@@ -1180,7 +1183,6 @@ textarea {
    */
 button,
 input {
-  outline: none;
   /* 1 */
   overflow: visible; }
 
