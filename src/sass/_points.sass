@@ -1,0 +1,63 @@
+.building_block
+    width: 800px
+    height: 700px
+    background-image: url('../img/request/request-bg.png')
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+.building-item 
+    max-width: 365px
+    display: flex
+    align-items: center
+    justify-content: start
+    position: relative
+    font-family: 'FuturaBookC'
+     font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+
+.building-item::before
+    width: 42px
+    height: 42px
+    background-color: #E3B873
+    color: white
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    position: absolute
+    left: -60px
+
+.building-item:nth-child(1)::before 
+    content: '01'
+
+
+.building-item:nth-child(2)::before 
+    content: '02'
+
+.building-item:nth-child(3)::before 
+    content: '03'
+
+.building-item:nth-child(4)::before 
+    content: '04'
+
+
+.building-item:nth-child(1) 
+    margin-top: 125px
+    margin-right: 27px
+
+
+.building-item:nth-child(2)
+    margin-top: 80px
+    margin-right: 175px
+
+.building-item:nth-child(3)
+    margin-top: 140px
+    margin-right: 100px
+
+
+.building-item:nth-child(4)
+    margin-top: 132.5px
+    margin-right: -5px
