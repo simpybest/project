@@ -220,6 +220,10 @@ input.invalid {
 .contacts__phone {
   margin-right: 45px; }
 
+.header-icon-link {
+  text-decoration: none;
+  color: #E3B873; }
+
 .hero {
   position: relative;
   display: flex;
@@ -1176,6 +1180,7 @@ textarea {
    */
 button,
 input {
+  outline: none;
   /* 1 */
   overflow: visible; }
 
